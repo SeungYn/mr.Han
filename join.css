@@ -1,0 +1,47 @@
+input {
+  display: block;
+  width: 500px;
+  height: 60px;
+  margin: auto;
+  font-size: 20px;
+}
+
+#login {
+  position: relative;
+  top: 100px;
+}
+
+.form__background {
+  border: 2px solid #dcdcdc;
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.login__menu {
+  display: flex;
+}
+
+.loginbox:last-child {
+  border-bottom: none;
+}
+.loginbox:first-child {
+  border-right: 2px solid #dcdcdc;
+}
+
+.loginbox {
+  width: 50%;
+  height: 50px;
+  border-bottom: 2px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__form {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
