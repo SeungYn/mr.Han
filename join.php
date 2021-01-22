@@ -16,7 +16,7 @@
         <div class="loginbox"><h3><a href="join.html">회원가입</a></h3></div>
       </div>
       <div class="login__form">
-        <form method="post" action="join_action">
+        <form method="post" action="join_action.php">
           <div class="form__group">
             <input type="text" placeholder="아이디" name="userID">
             <input type="password" placeholder="비밀번호" name="userPassword">
