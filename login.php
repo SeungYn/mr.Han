@@ -12,8 +12,8 @@
   <section id="login">
     <div class="form__background">
       <div class="login__menu">
-        <div class="loginbox"><h3><a href="login.html">로그인</a></h3></div>
-        <div class="loginbox"><h3><a href="join.html">회원가입</a></h3></div>
+        <div class="loginbox"><h3><a href="login.php">로그인</a></h3></div>
+        <div class="loginbox"><h3><a href="join.php">회원가입</a></h3></div>
       </div>
       <div class="login__form">
         <form method="post" action="login_action.php">
