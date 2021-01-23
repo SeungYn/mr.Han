@@ -1,5 +1,5 @@
 <?php 
-  class Users{
+  class User{
       private $userID;
       private $userPassword;
       private $userEmail;
@@ -8,27 +8,27 @@
 
       } 
       public function setUserID($userID){
-        $this->$userID = $userID;
+        $this->userID = $userID;
       }
 
       public function getuserID(){
-        return $userID;
+        return $this->userID;
       }
 
       public function setUserPassword($userPassword){
-        $this->$userPassword = $userPassword;
+        $this->userPassword = $userPassword;
       }
 
       public function getuserPassword(){
-        return $userPassword;
+        return $this->userPassword;
       }
 
       public function setUserEmail($userEmail){
-        $this->$userEmail = $userEmail;
+        $this->userEmail = $userEmail;
       }
 
       public function getuserEmail(){
-        return $userEmail;
+        return $this->userEmail;
       }
   }
 ?>
