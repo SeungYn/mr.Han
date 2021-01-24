@@ -24,7 +24,7 @@
     echo "<script> history.back()</script>";
   }else{
     $userDAO->join($user);
-    echo "<script> location.href='index.html' </script>";
+    echo "<script> location.href='index.php' </script>";
   }
 
 ?>
