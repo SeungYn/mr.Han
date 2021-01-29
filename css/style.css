@@ -17,16 +17,6 @@ body {
   margin: 0;
 }
 
-h3 {
-}
-
-input {
-  display: block;
-  width: 500px;
-  height: 60px;
-  margin: auto;
-}
-
 #home {
   position: relative;
   top: 100px;
@@ -37,14 +27,12 @@ input {
   border: 5px solid transparent;
   margin: 5px;
 
-  height: 280px;
-  width: 360px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
 
 .home__avatar:hover {
-  border: 5px solid transparent;
-  border-radius: 50%;
   background-image: linear-gradient(#444444, #444444),
     linear-gradient(to top, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
   background-origin: border-box;
@@ -58,7 +46,7 @@ input {
   justify-content: center;
 }
 
-.homeBtn__container > .btn {
+.homeBtn__container .btn {
   padding: 0px;
   box-sizing: border-box;
   border: 1px solid #cecece;
@@ -69,7 +57,7 @@ input {
   outline: 0;
 }
 
-.homeBtn__container > .btn:hover {
+.homeBtn__container .btn:hover {
   cursor: pointer;
   border: 1px solid #cecece;
   background-color: #dfdfdf;

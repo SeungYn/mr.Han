@@ -23,6 +23,7 @@
             <?php
                 }
             ?>
+            
     </section>
 </body>
 </html>

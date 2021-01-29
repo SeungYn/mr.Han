@@ -1,0 +1,75 @@
+#swearing {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+.swearing_table {
+  margin: auto;
+  width: 580px;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0;
+}
+.swearing_table,
+.swearing_table th,
+.swearing_table td {
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.swearing_table th {
+  height: 40px;
+  padding: 0;
+}
+.swearing_table td {
+  text-align: auto;
+  padding: 0;
+  margin: 0;
+  height: 35px;
+}
+.swearing__write {
+  border: 1px solid black;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 4%;
+}
+
+.swearing__write .input__title {
+  display: block;
+  width: 600px;
+  height: 35px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-size: 15px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.swearing__write .input__content {
+  resize: none;
+  display: block;
+  width: 600px;
+  height: 400px;
+  overflow: auto;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.swearing__write h3 {
+  border: 1px solid black;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.swearing__write input:focus,
+.swearing__write textarea:focus {
+  outline: none;
+  border: 1.5px solid blue;
+}
+
+.swearing__submit {
+}

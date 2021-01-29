@@ -43,6 +43,7 @@
 
       mysqli_stmt_bind_param($this->pstmt,"sss",$userID,$userPassword,$userEmail);
       mysqli_stmt_execute($this->pstmt);
+      mysqli_stmt_close($this->pstmt);
     }
   }
 ?>
