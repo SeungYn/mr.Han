@@ -1,5 +1,8 @@
 <?php 
     session_start();
+    if(isset($_SESSION['userID'])){
+        echo $_SESSION['userID'];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

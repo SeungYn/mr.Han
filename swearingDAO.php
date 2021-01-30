@@ -31,6 +31,25 @@
       mysqli_stmt_execute($stmt);
       return 1;
     }
+
+    public function getListNum(){
+      $sql="SELECT COUNT(*) FROM swearing";
+      $result = mysqli_query($this->conn,$sql);
+      $num = mysqli_fetch_row($result);
+
+      return $num[0];
+    }
+
+    public function getList($page,$limit){
+      $sql = "SELECT * FROM swearing WHERE swearingID <= ? ORDER BY swearingID DESC LIMIT ?";
+      $stmt = mysqli_prepare($this->conn,$sql);
+      mysqli_stmt_bind_param($stmt,"ii",$page,$limit);
+      mysqli_stmt_execute($stmt);
+      $result = mysqli_stmt_get_result($stmt);
+      
+      return $result;
+    }
+    
   }
 
 
