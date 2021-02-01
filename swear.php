@@ -5,7 +5,7 @@
     private $userID;
     private $swearingDate;
     private $swearingContent;
-    private $swearingAvailalbe;
+    private $swearingAvailable;
 
     public function setSwearingID($swearingID){
       $this->swearingID = $swearingID;

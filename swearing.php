@@ -64,7 +64,7 @@
           while($row = mysqli_fetch_assoc($get_list)){
         ?>
           <tr>
-            <td><a href="#"><?=htmlspecialchars($row['swearingID'])?></a></td> <td><a><?=htmlspecialchars($row['swearingTitle'])?></a></td> <td><a><?=htmlspecialchars($row['userID'])?></a></td> <td><a><?=htmlspecialchars($row['swearingDate'])?></a></td>
+            <td><a href="swearing_view.php?swearingID=<?=$row['swearingID']?>"><?=htmlspecialchars($row['swearingID'])?></a></td> <td><a><?=htmlspecialchars($row['swearingTitle'])?></a></td> <td><a><?=htmlspecialchars($row['userID'])?></a></td> <td><a><?=htmlspecialchars($row['swearingDate'])?></a></td>
           </tr>
         <?php 
           }

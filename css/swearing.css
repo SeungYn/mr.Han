@@ -33,8 +33,17 @@
 .swearing__write {
   border: 1px solid black;
   padding: 10px;
-  display: inline-block;
   border-radius: 4%;
+  margin: 0 19%;
+  width: 620px;
+}
+.swearing__write h3 {
+  border: 1px solid black;
+  margin: 0;
+  border-radius: 10px;
+  width: 600px;
+  margin-right: 0;
+  display: inline-block;
 }
 
 .swearing__write .input__title {
@@ -46,6 +55,8 @@
   font-size: 15px;
   border: 1px solid black;
   padding: 10px;
+  margin-right: 0;
+  display: inline-block;
 }
 
 .swearing__write .input__content {
@@ -57,12 +68,11 @@
   border-radius: 10px;
   font-size: 15px;
   padding: 10px;
+  margin-right: 0px;
+  display: inline-block;
 }
 
 .swearing__write h3 {
-  border: 1px solid black;
-  margin: 0;
-  border-radius: 10px;
 }
 
 .swearing__write input:focus,
@@ -72,4 +82,52 @@
 }
 
 .swearing__submit {
+  display: block;
+  margin: auto;
+}
+
+.swearingView__background {
+  border: 1px solid #65ffba;
+  width: 580px;
+  height: 600px;
+  margin: auto;
+  background-color: #afffee;
+  background-image: linear-gradient(to bottom, #afffee, white);
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.swearingView__header {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  height: 10%;
+  margin-bottom: 10px;
+}
+
+.swearingView__header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+.swearingView__header .line {
+  background: #afffee;
+  width: 100%;
+  height: 1px;
+  display: block;
+}
+
+.swearingView__content {
+  background-color: white;
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+  text-align: left;
+  padding: 10px;
+}
+.swearingView__content p {
+  margin: 0;
 }

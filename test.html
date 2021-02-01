@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    a= document.querySelector('.div:first-child');
+    console.log(a);
+  </script>
+  <style>
+    .div ul:first-child{
+      background-color:blue;
+    }
+
+    .div ul:first-child ::after{
+      content:"sad";
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="div">
+    <ul >
+      <li>1</li>
+    </ul>
+    <ul>
+      <li>1</li>
+    </ul>
+  </div>
+</body>
+</html>
