@@ -31,18 +31,20 @@
     <div class="swearingView__background">
       <div class="swearingView__header">
         <ul class="titleAndwriter">
-          <li>제목:<?=$fetchSwearing['swearingTitle']?></li>
-          <li>작성자:<?=$fetchSwearing['userID']?></li>
+          <li>제목:<?=htmlspecialchars($fetchSwearing['swearingTitle'])?></li>
+          <li>작성자:<?=htmlspecialchars($fetchSwearing['userID'])?></li>
         </ul>
         <div class="line"></div>
         <ul class="listNumAnddate">
-          <li>글 번호:<?=$fetchSwearing['swearingID']?></li>
-          <li>날짜:<?=$fetchSwearing['swearingDate']?></li>
+          <li>글 번호:<?=htmlspecialchars($fetchSwearing['swearingID'])?></li>
+          <li>날짜:<?=htmlspecialchars($fetchSwearing['swearingDate'])?></li>
         </ul>
       </div>
       <div class="swearingView__content">
         <p><?=$fetchSwearing['swearingContent']?></p>
       </div>
+      <a href="swearingUpdate.php" class="miniButton">수정</a>
+      <a onClick="return confirm('삭제하시겠습니까?')" href="swearingDelete.php" class="miniButton">삭제</a>
     </div>
   </section>
 </body>
