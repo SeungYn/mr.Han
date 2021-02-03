@@ -60,6 +60,17 @@
       return $rs;
     }
     
+    public function update($swearingID,$swearingTitle,$swearingContent,$swearingDate){
+      $sql="UPDATE swearing SET swearingTitle=?, swearingContent=? ,swearingDate=? WHERE swearingID = ?";
+      $stmt = mysqli_prepare($this->conn,$sql);
+      mysqli_stmt_bind_param($stmt,"sssi",$swearingTitle,$swearingContent,$swearingDate,$swearingID);
+      $result = mysqli_stmt_execute($stmt);
+      if($result==1){
+        return 1; //업데이트 성공
+      }
+      return 0; //업데이트 실패
+
+    }
   }
 
 

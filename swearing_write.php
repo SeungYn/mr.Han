@@ -13,14 +13,14 @@
 </head>
 <body>
   <section id="swearing">
-    <form action="swearing_writeAction.php" method="post">
       <div class="swearing__write">
-        <h3>글쓰기</h3>
-        <input type="text" name="swearingTitle" class="input__title" maxlength="50" placeholder="제목">
-        <textarea name="swearingContent" class="input__content" maxlength="4096" placeholder="내용"></textarea>
-        <input type="submit" value="글쓰기" class="swearing__submit">
+        <form action="swearing_writeAction.php" method="post">
+          <h3>글쓰기</h3>
+          <input type="text" name="swearingTitle" class="input__title" maxlength="50" placeholder="제목">
+          <textarea name="swearingContent" class="input__content" maxlength="4096" placeholder="내용"></textarea>
+          <input type="submit" value="글쓰기" class="swearing__submit">
+        </form>
       </div>
-  </form>
   </section>
   
 </body>

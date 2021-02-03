@@ -43,8 +43,16 @@
       <div class="swearingView__content">
         <p><?=$fetchSwearing['swearingContent']?></p>
       </div>
-      <a href="swearingUpdate.php" class="miniButton">수정</a>
-      <a onClick="return confirm('삭제하시겠습니까?')" href="swearingDelete.php" class="miniButton">삭제</a>
+
+      <a href="swearing.php" class="miniButton">목록</a>
+      <?php 
+        if($_SESSION['userID']===$fetchSwearing['userID']){
+      ?>
+        <a href="swearing_Update.php?swearingID=<?=$fetchSwearing['swearingID']?>" class="miniButton">수정</a>
+        <a onClick="return confirm('삭제하시겠습니까?')" href="swearingDelete.php" class="miniButton">삭제</a>
+      <?php 
+        }
+      ?>
     </div>
   </section>
 </body>

@@ -3,6 +3,7 @@
   require_once('swear.php');
   session_start();
   
+  
 
   $swearingInfo = new Swearing;
   $swearingDAO = new SwearingDAO;

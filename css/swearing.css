@@ -2,6 +2,7 @@
   position: relative;
   top: 100px;
   text-align: center;
+  height: 100%;
 }
 .swearing_table {
   margin: auto;
@@ -34,7 +35,7 @@
   border: 1px solid black;
   padding: 10px;
   border-radius: 4%;
-  margin: 0 19%;
+  margin: auto;
   width: 620px;
 }
 .swearing__write h3 {
@@ -70,9 +71,6 @@
   padding: 10px;
   margin-right: 0px;
   display: inline-block;
-}
-
-.swearing__write h3 {
 }
 
 .swearing__write input:focus,
@@ -128,10 +126,12 @@
   text-align: left;
   padding: 10px;
 }
+
 .swearingView__content p {
   margin: 0;
 }
 
+.miniButton__submit,
 .miniButton {
   border: 1px solid #65ffba;
   color: white;
@@ -141,4 +141,58 @@
   display: inline-block;
   border-radius: 10px;
   margin: -2px;
+}
+
+.miniButton__submit {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.miniButton:visited {
+  color: white;
+}
+
+.swearingUpdate__background {
+  border: 1px solid #65ffba;
+  width: 580px;
+  height: 650px;
+  margin: auto;
+  background-color: #afffee;
+  background-image: linear-gradient(to bottom, #afffee, white);
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.swearingUpdate__header {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  height: 5%;
+  margin-bottom: 10px;
+}
+
+.swearingUpdate__content,
+.swearingUpdate__content p {
+  background-color: white;
+  width: 100%;
+  height: 85%;
+  border-radius: 20px;
+  text-align: left;
+  padding: 10px;
+  display: block;
+}
+
+.swearingUpdate__header input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.swearingUpdate__content .textareaa1 {
+  resize: none;
+  width: 100%;
+  height: 540px;
+  overflow: auto;
+  outline: none;
+  border: none;
 }
