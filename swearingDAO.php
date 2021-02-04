@@ -71,6 +71,45 @@
       return 0; //업데이트 실패
 
     }
+
+    public function delete($swearingID){
+      $sql = "UPDATE swearing SET swearingAvailable = 0 WHERE swearingID = ?";
+      $stmt = mysqli_prepare($this->conn,$sql);
+      mysqli_stmt_bind_param($stmt,"i",$swearingID);
+      $result = mysqli_stmt_execute($stmt);
+      if($result == 1){
+        return 1; //삭제성공
+      }
+      return 0; //삭제실패
+    }
+
+    public function cloneSwearing(){
+      $sql= "INSERT INTO deleteSwearing SELECT swearingID,swearingTitle,userID,swearingDate,swearingContent from swearing";
+      $result = mysqli_query($this->conn,$sql);
+      if($result==1){
+        return 1; //복사성공
+      }
+      return 0; //복사실패
+    }
+
+    public function deleteSwearing(){
+      $sql = "DELETE FROM swearing WHERE swearingAvailable = 0";
+      $result = mysqli_query($this->conn,$sql);
+      if($result ==1){
+        return 1;//삭제성공
+      }
+      return 0;//삭제실패
+      
+    }
+
+    public function reindexing(){
+      $sql = "ALTER TABLE swearing AUTO_INCREMENT=1";
+      mysqli_query($this->conn,$sql);
+      $sql= "SET @cnt=0";
+      mysqli_query($this->conn,$sql);
+      $sql="UPDATE swearing SET swearingID=@cnt:=@cnt+1";
+      mysqli_query($this->conn,$sql);
+    }
   }
 
 

@@ -49,7 +49,7 @@
         if($_SESSION['userID']===$fetchSwearing['userID']){
       ?>
         <a href="swearing_Update.php?swearingID=<?=$fetchSwearing['swearingID']?>" class="miniButton">수정</a>
-        <a onClick="return confirm('삭제하시겠습니까?')" href="swearingDelete.php" class="miniButton">삭제</a>
+        <a onClick="return confirm('삭제하시겠습니까?')" href="swearing_deleteAction.php?swearingID=<?=htmlspecialchars($fetchSwearing['swearingID'])?>" class="miniButton">삭제</a>
       <?php 
         }
       ?>
