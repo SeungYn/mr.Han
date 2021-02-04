@@ -15,7 +15,10 @@
 <body>
     <!-- Home -->
     <section id="home">
-        <image class="home__avatar" src="image/캥거루.jpg"></image>
+        <image class="home__avatar" src="image/개패고싶은사진.jpg"
+        onmouseover="this.src='image/한대치고싶은사진.jpg'"
+        onmouseout="this.src='image/개패고싶은사진.jpg'"
+        ></image>
             <?php
                 if(!isset($_SESSION['userID'])){
             ?>
