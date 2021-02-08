@@ -10,10 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <!-- info -->
     <!-- navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
@@ -30,6 +30,21 @@
             </li>
         </ul>
     </nav>
+
+    <!-- info -->
+    <div class="sideMenu">
+        <div class="sideMenu__info">
+            <p>내정보1</p>
+            <p>내정보2</p>
+            <p>내정보3</p>
+        </div>
+        <div class="sideMenu__bottom">
+            <a href="logoutAction.php">로그아웃</a>
+            <img class="sideMenu__button__on"src="image/준영이친구.jpg" width="30" height="30" style="border-radius:50%;">
+            <img class="sideMenu__button__close"src="image/한준영버스.jpg" width="30" height="30" style="border-radius:50%;">
+        </div>
+    </div>
+   
 
     <!-- Home -->
     <section id="home">
