@@ -13,6 +13,24 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- info -->
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="index.php"><img src="image/인트로한준영.jpg" width="50" height="100%"></a>
+            <a href="index.php">Hanㅗ</a>
+        </div>
+        <ul class="navbar__menu">
+            <li><a href="swearing.php">게시판</a></li>
+            <li><a href="#">갤러리</a>
+                <ul class="navbar__menu__gallery">
+                    <a href="#"><li>갤러리1</li></a>
+                    <li>갤러리2</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <!-- Home -->
     <section id="home">
         <image class="home__avatar" src="image/개패고싶은사진.jpg"
