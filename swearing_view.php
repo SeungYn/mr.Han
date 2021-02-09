@@ -15,6 +15,8 @@
   
   $filterSwearingID = mysqli_real_escape_string($swearingDAO->conn,$swearingID);
   $fetchSwearing = $swearingDAO->getSwearing($filterSwearingID);
+  //echo $swearingID;
+  //echo $fetchSwearing['swearingTitle'].",".$fetchSwearing['swearingContent'];
 
 ?>
 <!DOCTYPE html>

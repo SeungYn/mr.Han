@@ -1,4 +1,5 @@
 <?php 
+  require('userID_session.php');
   session_destroy();
-  echo "<script>loction.href='index.php'</script>";
+  echo "<script>location.href='index.php'</script>";
 ?>

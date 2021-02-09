@@ -23,6 +23,8 @@
     }
 
     public function write($swearingTitle,$userID,$now,$swearingContent){
+      $sql = "alter table swearing auto_increment = 1";
+      mysqli_query($this->conn,$sql);
       $sql = "INSERT INTO swearing VALUES (?,?,?,?,?,?)";
       $stmt = mysqli_prepare($this->conn,$sql);
       $f=0;
