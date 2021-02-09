@@ -11,8 +11,10 @@ sideMenuButton.addEventListener('click',()=>{
   sideMenu.style.width="250px";
   sideMenuButton.style.display="none";
   sideMenuButtonClose.style.display="block";
-  sideMenuLogout.style.display="block";
-  setTimeout(()=>{sideMenuInfo.style.display="block";sideMenu.style.flexDirection="column";}
+  setTimeout(()=>{
+  sideMenuInfo.style.display="block";
+  sideMenu.style.flexDirection="column";
+  sideMenuLogout.style.display="block";}
   ,200);
 });
 
@@ -23,5 +25,6 @@ sideMenuButtonClose.addEventListener('click',()=>{
   sideMenuInfo.style.display="none";
   sideMenuButton.style.display="block";
   sideMenuButtonClose.style.display="none";
+  sideMenuLogout.style.display="none";
 });
 

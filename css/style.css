@@ -139,12 +139,25 @@ ul {
   transition: width 1s;
 }
 
+.sideMenu__button__close {
+  margin: 0 auto;
+}
+
 .sideMenu__info {
   display: none;
 }
 
 .sideMenu__bottom > a {
   display: none;
+  border: 1px solid var(--color-light-grey);
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.sideMenu__bottom > a:hover {
+  background-color: var(--color-light-grey);
+  color: white;
 }
 
 .sideMenu__button__close {
