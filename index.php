@@ -1,6 +1,12 @@
 <?php 
     session_start();
     require('swearingDAO.php');
+    $swearingDAO = new SwearingDAO;
+    if(isset($_SESSION['userID'])){
+        $write_count = $swearingDAO->getSwearingCount($_SESSION['userID']);
+    }
+    
+    
     
 ?>
 <!DOCTYPE html>
@@ -35,7 +41,7 @@
     <!-- info -->
     <div class="sideMenu">
         <div class="sideMenu__info">
-            <p>내정보1</p>
+            내가쓴 게시물 갯수:<?=$write_count?>
             <p>내정보2</p>
             <p>내정보3</p>
         </div>
