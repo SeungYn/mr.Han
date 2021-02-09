@@ -7,7 +7,7 @@
     
     public function __construct(){
       $this->conn = mysqli_connect(
-        'localhost',
+        '127.0.0.1',
         'root',
         'tmddbs3124',
         'han'

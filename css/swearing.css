@@ -11,6 +11,7 @@
   border: 1px solid black;
   border-collapse: collapse;
   padding: 0;
+  caption-side: bottom;
 }
 .swearing_table,
 .swearing_table th,
@@ -31,6 +32,19 @@
   margin: 0;
   height: 35px;
 }
+
+.swearing_table__bottom {
+  margin-top: 8px;
+}
+
+.swearing_table__bottom__paging {
+  display: inline-block;
+}
+
+.swearing_table__bottom__write {
+  float: right;
+}
+
 .swearing__write {
   border: 1px solid black;
   padding: 10px;

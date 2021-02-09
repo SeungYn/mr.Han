@@ -1,8 +1,7 @@
 <?php 
     session_start();
-    if(isset($_SESSION['userID'])){
-        
-    }
+    require('swearingDAO.php');
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">

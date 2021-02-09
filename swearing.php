@@ -36,6 +36,19 @@
     $limit = $list_total_num%$standard_list;
   }
   
+  //다음 이전 
+  $nextnum = $now_page+$standard_block;
+  if($nextnum >= $total_page){
+    $nextnum = $total_page;
+  }
+  $next = "<a href='swearing.php?now_page=".$nextnum."'>다음</a>";
+  
+  $prenum = $now_page-$standard_block;
+  if($prenum<=1){
+    $prenum = 1;
+  }
+  $pre = "<a href='swearing.php?now_page=".$prenum."'>이전</a>";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,6 +60,23 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- navbar -->
+  <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="index.php"><img src="image/인트로한준영.jpg" width="50" height="100%"></a>
+            <a href="index.php">Hanㅗ</a>
+        </div>
+        <ul class="navbar__menu">
+            <li><a href="swearing.php">게시판</a></li>
+            <li><a href="#">갤러리</a>
+                <ul class="navbar__menu__gallery">
+                    <a href="#"><li>갤러리1</li></a>
+                    <li>갤러리2</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
   <!-- Swearing board -->
   
   <section id="swearing">
@@ -70,8 +100,18 @@
           }
         ?>
       </tbody>
+      <caption>
+        <div class="swearing_table__bottom">
+          <div class="swearing_table__bottom__paging">
+            <?=$pre?>
+            <?=$page_list?>
+            <?=$next?>
+          </div>
+          <a href="swearing_write.php" class="swearing_table__bottom__write">글쓰기</a>
+        </div>
+      </caption>
     </table>
-    <?=$page_list?>
+    
   </section>
 </body>
 </html>

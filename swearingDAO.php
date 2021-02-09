@@ -5,7 +5,7 @@
 
     public function __construct(){
       $this->conn = mysqli_connect(
-        'localhost',
+        '127.0.0.1',
         'root',
         'tmddbs3124',
         'han'
@@ -112,7 +112,19 @@
       $sql="UPDATE swearing SET swearingID=@cnt:=@cnt+1";
       mysqli_query($this->conn,$sql);
     }
+
+    //게시글수 가져오기
+    public function getSwearingCount($userID){
+      $sql = "SELECT COUNT(*) FROM swearing WHERE userID=?";
+      $stmt = mysqli_prepare($this->conn,$sql);
+      mysqli_stmt_bind_param($stmt,"s",$userID);
+      mysqli_stmt_execute($stmt);
+      $result = mysqli_stmt_get_result($stmt);
+      $rs = mysqli_fetch_row($result);
+
+      return $rs[0];
+    }
+
+
   }
-
-
 ?>
