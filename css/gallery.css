@@ -1,0 +1,45 @@
+.han__slide__wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 500px;
+  margin: 15px auto;
+  color: black;
+}
+
+.han__slide {
+  position: relative;
+  display: flex;
+  font-size: 0;
+  left: 0;
+  transition: left 1s;
+}
+
+.han__slide img {
+  width: 600px;
+  height: 500px;
+}
+
+.han__slide__wrapper span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  border-radius: 50%;
+  color: transparent;
+}
+
+.han__slide__wrapper span:hover {
+  background-color: var(--color-light-grey);
+  color: white;
+  cursor: pointer;
+}
+
+.han__slide__wrapper span:active {
+  background-color: white;
+  color: var(--color-light-grey);
+}
+
+.han__slide__wrapper .next {
+  right: 0;
+}

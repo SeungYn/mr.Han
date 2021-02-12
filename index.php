@@ -29,7 +29,7 @@
             <li><a href="swearing.php">게시판</a></li>
             <li><a href="#">갤러리</a>
                 <ul class="navbar__menu__gallery">
-                    <a href="#"><li>갤러리1</li></a>
+                    <a href="gallery/gallery1.php"><li>갤러리1</li></a>
                     <li>갤러리2</li>
                 </ul>
             </li>
@@ -41,7 +41,7 @@
     <!-- info -->
     <div class="sideMenu">
         <div class="sideMenu__info">
-            내가쓴 게시물 갯수:<?=$write_count?>
+            내가쓴 게시물 갯수 : <?=$write_count?>개
             <p>내정보2</p>
             <p>내정보3</p>
         </div>

@@ -15,7 +15,7 @@ sideMenuButton.addEventListener('click',()=>{
   sideMenuInfo.style.display="block";
   sideMenu.style.flexDirection="column";
   sideMenuLogout.style.display="block";}
-  ,200);
+  ,400);
 });
 
 //사이드 버튼 close시

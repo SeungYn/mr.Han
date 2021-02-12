@@ -93,9 +93,6 @@ ul {
   padding: 5px;
 }
 
-.navbar__menu li a {
-}
-
 .navbar__menu li:hover {
   border: 1px solid black;
 }
